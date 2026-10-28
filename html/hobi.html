@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobi | Henokh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS EXTERNAL: file terpisah di folder css/ -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- CSS INTERNAL: aturan khusus halaman ini -->
+  <style>
+    /* CSS INTERNAL: kartu yang bisa dibalik (3D flip) */
+    .flip { perspective: 1000px; width: 100%; max-width: 420px; height: 300px; margin-bottom: 30px; }
+    .flip-dalam { position: relative; width: 100%; height: 100%; transition: transform .7s; transform-style: preserve-3d; }
+    .flip:hover .flip-dalam { transform: rotateY(180deg); }
+    .flip-depan, .flip-belakang { position: absolute; inset: 0; border-radius: 14px; backface-visibility: hidden; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,.15); }
+    .flip-depan img { width: 100%; height: 100%; object-fit: cover; }
+    .flip-depan span { position: absolute; left: 0; bottom: 0; padding: 8px 18px; background: #B5651D; color: #fff; font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; }
+    .flip-belakang { transform: rotateY(180deg); background: #fff; padding: 20px; overflow: auto; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="../index.html">henokh<span>.dev</span></a>
+    <nav><ul class="menu"><li><a href="../index.html">Beranda</a></li><li><a href="tentang.html">Tentang</a></li><li><a href="hobi.html" class="aktif">Hobi</a></li><li><a href="galeri.html">Galeri</a></li><li><a href="kontak.html">Kontak</a></li></ul></nav>
+  </header>
+  <div class="layout"><aside class="sidebar"><h3>Di halaman ini</h3><ul><li><a href="#intro">Pengantar</a></li><li><a href="#ngoding">Ngoding</a></li><li><a href="#kopi">Kopi</a></li><li><a href="#alasan">Kenapa cocok</a></li></ul></aside><main class="isi">
+
+      <section id="intro">
+        <h1>Hobi ku</h1>
+        <p class="lead">Dua kebiasaan yang hampir selalu berjalan bersamaan. Arahkan kursor ke kartu untuk melihat ceritanya.</p>
+      </section>
+      <section id="ngoding">
+        <h2>Billiard</h2>
+        <div class="flip">
+          <div class="flip-dalam">
+            <div class="flip-depan"><img src="../img/hobi1.jpg" alt="Foto saya sedang ngoding"><span>Billiard</span></div>
+            <div class="flip-belakang">
+              <p>Billiard adalah salah satu hobi saya yang begitu menyenangkan</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="kopi">
+        <h2>Ngopi</h2>
+        <div class="flip">
+          <div class="flip-dalam">
+            <div class="flip-depan"><img src="../img/foto-profil1.jpg" alt="Foto saya menyeduh kopi"><span>Kopi</span></div>
+            <div class="flip-belakang">
+              <p>Rasanya berubah tergantung gilingan, suhu air, dan waktu seduh.</p>
+              <ul class="cek"><li>Timbang biji kopi</li><li>Giling sesuai metode seduh</li><li>Seduh perlahan dan catat hasilnya</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <details class="detail" id="alasan">
+        <summary>Kenapa dua hobi ini cocok?</summary>
+        <p>Keduanya sama-sama soal eksperimen kecil: ubah satu hal, lihat hasilnya, lalu perbaiki.</p>
+      </details>
+  </main></div>
+  <footer class="footer"><p>&copy; 2026 Henokh &middot; Teknik Informatika, Universitas Langlangbuana</p></footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | Henokh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS EXTERNAL: file terpisah di folder css/ -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- CSS INTERNAL: aturan khusus halaman ini -->
+  <style>
+    .isi { max-width: 680px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="../index.html">henokh<span>.dev</span></a>
+    <nav><ul class="menu"><li><a href="../index.html">Beranda</a></li><li><a href="tentang.html">Tentang</a></li><li><a href="hobi.html">Hobi</a></li><li><a href="galeri.html">Galeri</a></li><li><a href="kontak.html" class="aktif">Kontak</a></li></ul></nav>
+  </header>
+  <div class="layout"><aside class="sidebar"><h3>Di halaman ini</h3><ul><li><a href="#form">Kirim pesan</a></li><li><a href="#info">Info lain</a></li></ul></aside><main class="isi">
+
+      <section id="form">
+        <h1>Kontak</h1>
+        <p class="lead">Ada pertanyaan atau ingin ngobrol soal ngoding dan kopi?</p>
+        <form class="form" action="#" method="post">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" placeholder="Nama kamu" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          <label for="topik">Topik</label>
+          <select id="topik" name="topik"><option>Ngoding</option><option>Kopi</option><option>Lainnya</option></select>
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan..."></textarea>
+          <button type="submit" class="tombol">Kirim pesan</button>
+        </form>
+      </section>
+      <section id="info">
+        <h2>Info lain</h2>
+        <!-- CSS INLINE -->
+        <p style="background:#fff; padding:14px 18px; border-left:5px solid #B5651D; border-radius:8px;">Lokasi: Bandung, Jawa Barat. Biasanya membalas pesan di malam hari.</p>
+      </section>
+  </main></div>
+  <footer class="footer"><p>&copy; 2026 Henokh &middot; Teknik Informatika, Universitas Langlangbuana</p></footer>
+</body>
+</html>

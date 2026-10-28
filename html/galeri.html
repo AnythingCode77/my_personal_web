@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri | Henokh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS EXTERNAL: file terpisah di folder css/ -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- CSS INTERNAL: aturan khusus halaman ini -->
+  <style>
+    /* CSS INTERNAL: gaya polaroid */
+    .galeri figure { background: #fff; padding: 10px 10px 4px; transform: rotate(-2deg); transition: transform .3s; }
+    .galeri figure:nth-child(even) { transform: rotate(2deg); }
+    .galeri figure:hover { transform: rotate(0) scale(1.04); }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="../index.html">henokh<span>.dev</span></a>
+    <nav><ul class="menu"><li><a href="../index.html">Beranda</a></li><li><a href="tentang.html">Tentang</a></li><li><a href="hobi.html">Hobi</a></li><li><a href="galeri.html" class="aktif">Galeri</a></li><li><a href="kontak.html">Kontak</a></li></ul></nav>
+  </header>
+  <div class="layout"><aside class="sidebar"><h3>Di halaman ini</h3><ul><li><a href="#foto">Foto-foto</a></li></ul></aside><main class="isi">
+
+      <section id="foto">
+        <h1>Galeri foto</h1>
+        <p class="lead">Potongan hobi saya, dari Billiard sampai makanan kafe.</p>
+        <div class="galeri">
+          <figure><img src="../img/hobi2.jpg" alt="Meja kerja"><figcaption>With Friendds</figcaption></figure>
+          <figure><img src="../img/hobi3.jpg" alt="Cangkir kopi"><figcaption>Selfie</figcaption></figure>
+          <figure><img src="../img/galeri_1.jpg" alt="Layar kode"><figcaption>Lunch</figcaption></figure>
+          <figure><img src="../img/galeri_4.jpg" alt="Alat seduh"><figcaption>Dinner</figcaption></figure>
+        </div>
+      </section>
+  </main></div>
+  <footer class="footer"><p>&copy; 2026 Henokh &middot; Teknik Informatika, Universitas Langlangbuana</p></footer>
+</body>
+</html>

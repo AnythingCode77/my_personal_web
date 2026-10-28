@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Henokh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS EXTERNAL: file terpisah di folder css/ -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS INTERNAL: aturan khusus halaman ini -->
+  <style>
+    /* khusus Beranda: efek bingkai foto bulat */
+    .foto-bulat { width: 300px; height: 300px; border-radius: 50%; overflow: hidden;
+                  border: 8px solid #fff; box-shadow: 0 0 0 6px #1F8A70, 0 20px 40px rgba(0,0,0,.2);
+                  animation: melayang 4s ease-in-out infinite; flex-shrink: 0; }
+    .foto-bulat img { width: 100%; height: 100%; object-fit: cover; }
+    .marquee { overflow: hidden; background: #2A1C16; color: #E8D9CC; padding: 14px 0; }
+    .marquee-isi { display: flex; gap: 48px; width: max-content; animation: geser 18s linear infinite; font-family: "Bricolage Grotesque", sans-serif; font-size: 1.3rem; }
+    @keyframes geser { to { transform: translateX(-50%); } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">henokh<span>.dev</span></a>
+    <nav><ul class="menu"><li><a href="index.html" class="aktif">Beranda</a></li><li><a href="html/tentang.html">Tentang</a></li><li><a href="html/hobi.html">Hobi</a></li><li><a href="html/galeri.html">Galeri</a></li><li><a href="html/kontak.html">Kontak</a></li></ul></nav>
+  </header>
+  <main>
+
+    <section class="hero">
+      <div class="hero-teks">
+        <h1> Billiard & <em>Ngopi</em>.</h1>
+        <p>Halo, saya Henokh. Di situs ini saya mendokumentasikan dua hobi saya: Billiard dan Ngopi.</p>
+        <a class="tombol" href="html/hobi.html">Lihat hobi saya</a>
+        <!-- CSS INLINE: atribut style langsung pada elemen -->
+        <a class="tombol" href="html/kontak.html" style="background:transparent; color:#B5651D; border:2px solid #B5651D; margin-left:10px;">Hubungi saya</a>
+      </div>
+      <div class="foto-bulat"><img src="img/foto-profil1.jpg" alt="Foto Henokh"></div>
+    </section>
+    <div class="marquee"><div class="marquee-isi"><span>Billiard</span><span>Kopi</span><span>Playing</span><span>Cafe</span><span>Ngoding</span><span>Debugging</span></div></div>
+    <section class="kartu-grid">
+      <article class="kartu"><h2>Tentang</h2><p>Mahasiswa Informatika yang suka membangun hal kecil yang berguna.</p><a href="html/tentang.html">Baca selengkapnya</a></article>
+      <article class="kartu"><h2>Hobi</h2><p>Ngoding malam hari dan eksperimen seduh kopi manual.</p><a href="html/hobi.html">Baca selengkapnya</a></article>
+      <article class="kartu"><h2>Galeri</h2><p>Potret meja kerja, cangkir, dan hasil seduhan.</p><a href="html/galeri.html">Baca selengkapnya</a></article>
+    </section>
+  </main>
+  <footer class="footer"><p>&copy; 2026 Henokh &middot; Teknik Informatika, Universitas Langlangbuana</p></footer>
+</body>
+</html>

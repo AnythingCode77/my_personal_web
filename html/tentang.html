@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang | Henokh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS EXTERNAL: file terpisah di folder css/ -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- CSS INTERNAL: aturan khusus halaman ini -->
+  <style>
+    .foto-persegi { width: 220px; height: 260px; object-fit: cover; border-radius: 14px; border: 6px solid #fff; box-shadow: 0 8px 20px rgba(0,0,0,.18); transform: rotate(-3deg); }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="../index.html">henokh<span>.dev</span></a>
+    <nav><ul class="menu"><li><a href="../index.html">Beranda</a></li><li><a href="tentang.html" class="aktif">Tentang</a></li><li><a href="hobi.html">Hobi</a></li><li><a href="galeri.html">Galeri</a></li><li><a href="kontak.html">Kontak</a></li></ul></nav>
+  </header>
+  <div class="layout"><aside class="sidebar"><h3>Di halaman ini</h3><ul><li><a href="#profil">Profil</a></li><li><a href="#perjalanan">Perjalanan</a></li><li><a href="#kemampuan">Kemampuan</a></li></ul></aside><main class="isi">
+
+      <section id="profil">
+        <h1>Tentang saya</h1>
+        <p class="lead">Saya mahasiswa Teknik Informatika di Universitas Langlangbuana, Bandung.</p>
+        <img class="foto-persegi" src="../img/galeri_2.jpg" alt="Foto Henokh">
+      </section>
+      <section id="perjalanan">
+        <h2>Perjalanan singkat</h2>
+        <ol class="timeline">
+          <li><strong>Semester awal</strong> belajar dasar pemrograman dan logika.</li>
+          <li><strong>Pertengahan</strong> membuat proyek basis data, Java, dan C++.</li>
+          <li><strong>Sekarang</strong> belajar membangun tampilan web dengan HTML dan CSS.</li>
+        </ol>
+      </section>
+      <section id="kemampuan">
+        <h2>Kemampuan</h2>
+        <table class="tabel">
+          <thead><tr><th>Bidang</th><th>Alat</th></tr></thead>
+          <tbody>
+            <tr><td>Pemrograman</td><td>Java, C++</td></tr>
+            <tr><td>Basis data</td><td>MySQL</td></tr>
+            <tr><td>Web</td><td>HTML, CSS</td></tr>
+            <tr><td>Desain</td><td>Figma</td></tr>
+          </tbody>
+        </table>
+        <!-- CSS INLINE -->
+        <p style="margin-top:14px; font-style:italic; color:#1F8A70;">Masih terus belajar, satu proyek demi satu proyek.</p>
+      </section>
+  </main></div>
+  <footer class="footer"><p>&copy; 2026 Henokh &middot; Teknik Informatika, Universitas Langlangbuana</p></footer>
+</body>
+</html>
